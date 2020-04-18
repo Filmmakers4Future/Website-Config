@@ -3,7 +3,10 @@
 ## Install the current website
 
 ```
-git clone https://github.com/Filmmakers4Future/Website-Code website
+git clone https://github.com/Filmmakers4Future/Website-Code
+
+cd Website-Code
+git checkout urlaube-preparation
 ```
 
 ## Configure the current website
@@ -13,8 +16,6 @@ See the corresponding [README.md](https://github.com/Filmmakers4Future/Website-C
 ## Install Urlaube
 
 ```
-cd website
-
 git clone https://github.com/urlaube/urlaube blog
 ```
 
