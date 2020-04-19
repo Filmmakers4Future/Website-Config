@@ -28,8 +28,8 @@
 
   // theme configuration
   Themes::set("copyright_html",  fhtml("<div class=\"small text-center text-muted\">%s</div>".NL.
-                                       "<div class=\"small text-center text-muted\">".NL.
-                                       "  <p>".NL.
+                                       "<div class=\"small text-center\">".NL.
+                                       "  <p class=\"text-muted\">".NL.
                                        "    <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a><br>".NL.
                                        "    <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a>".NL.
                                        "  </p>".NL.
