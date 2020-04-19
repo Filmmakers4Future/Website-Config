@@ -4,11 +4,11 @@
   if (!defined("URLAUBE")) { die(""); }
 
   // !!! COMMENT THIS OUT FOR PRODUCTION
-  Main::set(DEBUGMODE, true);
-  Main::set(LOGLEVEL,  Logging::INFO);
+  //Main::set(DEBUGMODE, true);
+  //Main::set(LOGLEVEL,  Logging::INFO);
 
   // main configuration
-  Main::set(CACHE,     false); // !!! SET THIS TO TRUE FOR PRODUCTION
+  Main::set(CACHE,     true); // !!! SET THIS TO TRUE FOR PRODUCTION
   Main::set(HOSTNAME,  "filmmakersforfuture.org");
   Main::set(LANGUAGE,  "en_US");
   Main::set(PORT,      "443");
