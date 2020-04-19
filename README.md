@@ -17,12 +17,12 @@ sudo git clone https://github.com/filmmakers4future/fm4ftheme /var/www/html/user
 
 cd /var/www/html/user/config
 sudo git init
-sudo git remote add https://github.com/filmmakers4future/website-config
+sudo git remote add origin https://github.com/filmmakers4future/website-config
 sudo git pull origin master
 
 cd /var/www/html/user/content
 sudo git init
-sudo git remote add https://github.com/filmmakers4future/website-content
+sudo git remote add origin https://github.com/filmmakers4future/website-content
 sudo git pull origin master
 ```
 
