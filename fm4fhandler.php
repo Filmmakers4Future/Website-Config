@@ -28,8 +28,8 @@
   define("DB_PASS", "fff");
 
   // defines the recipients and mail subjects of messages sent through the contact form
-  define("CONTACT_SUBJECTS", [[MAIL_MAIL => "admin@example.com", MAIL_SUBJECT => "Message for example.com"],
-                              [MAIL_MAIL => "admin@example.net", MAIL_SUBJECT => "Message for example.net"]]);
+  define("CONTACT_SUBJECTS", [["{%MAIL}" => "admin@example.com", "{%SUBJECT}" => "Message for example.com"],
+                              ["{%MAIL}" => "admin@example.net", "{%SUBJECT}" => "Message for example.net"]]);
 
   // defines the contents of the mail that is sent to the admin DURING verification
   define("ADMIN_VERIFY_MAIL_BODY",    file_get_contents(__DIR__."/templates/admin_verify.txt"));
