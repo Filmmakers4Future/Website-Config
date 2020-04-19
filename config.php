@@ -71,5 +71,8 @@
   Themes::set(TIMEFORMAT,        "d F Y");
 
   // include the configuration for the Filmmakers for Future handler
-  require_once(__DIR__."/fm4fhandler.php");
+  function configure_fm4fhandler() {
+    require_once(__DIR__."/fm4fhandler.php");
+  }
+  Plugins::register(null, "configure_fm4fhandler", BEFORE_HANDLER);
 
