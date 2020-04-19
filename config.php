@@ -13,7 +13,7 @@
   Main::set(LANGUAGE,  "en_US");
   Main::set(PORT,      "443");
   Main::set(PROTOCOL,  "https://");
-  Main::set(ROOTURI,   "/blog/");
+  Main::set(ROOTURI,   "/");
   Main::set(THEMENAME, FM4FTheme::class);
 
   // handler configuration
@@ -69,3 +69,7 @@
   Themes::set(SITENAME,          "Filmmakers for Future");
   Themes::set(SITESLOGAN,        "Blog");
   Themes::set(TIMEFORMAT,        "d F Y");
+
+  // include the configuration for the Filmmakers for Future handler
+  require_once(__DIR__."/fm4fhandler.php");
+

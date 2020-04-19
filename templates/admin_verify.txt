@@ -1,0 +1,14 @@
+Dear Admin,
+
+the following user has verified their registration:
+
+Name:       {%NAME}
+Job:        {%JOB}
+Website:    {%WEBSITE}
+Country:    {%COUNTRY}
+
+In order to verify the submission please visit the following link and complete the registration:
+
+https://filmmakersforfuture.org/verify?uid={%UID}&admin={%ADMIN_VERIFY_TOKEN}
+
+Thank you very much.

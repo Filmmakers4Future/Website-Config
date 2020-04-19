@@ -1,0 +1,8 @@
+The following user has sent you a message through the contact form:
+
+Name: {%NAME}
+Mail: {%MAIL}
+
+The messages follows below:
+
+{%MESSAGE}

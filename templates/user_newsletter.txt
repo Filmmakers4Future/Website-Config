@@ -1,0 +1,11 @@
+Dear {%NAME},
+
+you have requested a link to manage your newsletter subscription.
+
+In order to update your newsletter subscription please visit the following link:
+
+https://filmmakersforfuture.org/newsletter?uid={%UID}&user={%USER_NEWSLETTER_TOKEN}
+
+If you have not requested this link then please ignore this email.
+
+Thank you very much.

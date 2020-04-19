@@ -1,0 +1,13 @@
+# ignore Urlaube file
+.gitkeep
+
+# do not publish error logs
+errors/*
+!errors/.gitkeep
+
+# do not publish macOS blergh
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes

@@ -1,0 +1,11 @@
+Dear {%NAME},
+
+welcome to Filmmakers for Future!
+
+Your signature has been verified and is now online!
+
+You can find it here: https://filmmakersforfuture.org/signatures
+
+Please have a look at our Participate (https://filmmakersforfuture.org/participate) page, which we constantly update with new information on how you can help!
+
+Again, thank you very much.
