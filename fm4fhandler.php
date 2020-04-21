@@ -28,12 +28,12 @@
   define("DB_PASS", "bwZkCKsj2Du9jJizbdGLqoAbEU7iKJKRJ3wynbDNfh3gs");
 
   // defines the recipients and mail subjects of messages sent through the contact form
-  define("CONTACT_SUBJECTS", [[MAIL_MAIL => "contact@filmmakersforfuture.org", MAIL_SUBJECT => "General"],
-                              [MAIL_MAIL => "contact@filmmakersforfuture.org", MAIL_SUBJECT => "Update signature data"],
-                              [MAIL_MAIL => "groups@filmmakersforfuture.org", MAIL_SUBJECT => "Working Group Invite"],
-                              [MAIL_MAIL => "videos@filmmakersforfuture.org", MAIL_SUBJECT => "Submit video"],
+  define("CONTACT_SUBJECTS", [[MAIL_MAIL => "contact@filmmakersforfuture.org",       MAIL_SUBJECT => "General"],
+                              [MAIL_MAIL => "contact@filmmakersforfuture.org",       MAIL_SUBJECT => "Update signature data"],
+                              [MAIL_MAIL => "groups@filmmakersforfuture.org",        MAIL_SUBJECT => "Working Group Invite"],
+                              [MAIL_MAIL => "videos@filmmakersforfuture.org",        MAIL_SUBJECT => "Submit video"],
                               [MAIL_MAIL => "collaboration@filmmakersforfuture.org", MAIL_SUBJECT => "Collaboration"],
-                              [MAIL_MAIL => "privacy@filmmakersforfuture.org", MAIL_SUBJECT => "Privacy related"]]);
+                              [MAIL_MAIL => "privacy@filmmakersforfuture.org",       MAIL_SUBJECT => "Privacy related"]]);
 
   // defines the contents of the mail that is sent to the admin DURING verification
   define("ADMIN_VERIFY_MAIL_BODY",    file_get_contents(__DIR__."/templates/admin_verify.txt"));
