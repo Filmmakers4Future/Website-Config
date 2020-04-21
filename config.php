@@ -59,13 +59,28 @@
                                        "Filmmakers4Future on Facebook"));
   Themes::set("header_name",     "Blog");
   Themes::set("header_sentence", "Green film production in audio form! yeay");
-  Themes::set(MENU,              [[TITLE => "Statement",          URI => "/#statement"],
-                                  [TITLE => "Demands",            URI => "/demands"],
-                                  [TITLE => "Signatures",         URI => "/signatures"],
-                                  [TITLE => "Green Filmmaking",   URI => "/greenfilmmaking"],
-                                  [TITLE => "Videos",             URI => "/videos"],
-                                  [TITLE => "Participate",        URI => "/participate"],
-                                  [TITLE => "Sign the Statement", URI => "/#sign"]]);
+  Themes::set(MENU,              [[TITLE => "Statement",
+                                   URI   => "/#statement"],
+                                  [TITLE => "Demands",
+                                   URI   => "/demands"],
+                                  [TITLE => "Signatures",
+                                   URI   => "/signatures"],
+#                                  [TITLE => "Green Filmmaking",
+#                                   URI   => "/greenfilmmaking"],
+                                  [TITLE => "Videos",
+                                   URI   => "/videos"],
+                                  [TITLE => "Participate",
+                                   URI   => "/participate"],
+                                  [TITLE => "Services",
+                                   URI   => "#",
+                                   MENU  => [[TITLE => "Action",
+                                              URI   => "#"],
+                                             [TITLE => "Another action",
+                                              URI   => "#"],
+                                             [TITLE => "Something else here",
+                                              URI   => "#"]]],
+                                  [TITLE => "Sign the Statement",
+                                   URI   => "/#sign"]]);
   Themes::set(SITENAME,          "Filmmakers for Future");
   Themes::set(SITESLOGAN,        "Blog");
   Themes::set(TIMEFORMAT,        "d F Y");
