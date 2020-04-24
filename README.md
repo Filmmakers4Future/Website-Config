@@ -24,6 +24,11 @@ cd /var/www/html/user/content
 sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-content
 sudo git pull origin master
+
+cd /var/www/html/user/uploads
+sudo git init
+sudo git remote add origin https://github.com/filmmakers4future/website-uploads
+sudo git pull origin master
 ```
 
 ## Configure the webserver
