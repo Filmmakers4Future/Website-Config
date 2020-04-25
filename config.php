@@ -26,6 +26,42 @@
   Handlers::set("podcast_owner_name",  "Filmmakers for Future");
   Handlers::set("podcast_type",        "episodic");
 
+  // plugin configuration
+  Plugins::set("ADMIN_MAIL",               "verification@filmmakersforfuture.org");
+  Plugins::set("MAILGUN_AUTH",             "api:key-d98741c10f55210aa8727f4d3141c4ea");
+  Plugins::set("MAILGUN_ENDPOINT",         "https://api.eu.mailgun.net/v3/mg.filmmakersforfuture.org/messages");
+  Plugins::set("MAILGUN_FROM",             "Filmmakers for Future <message@mg.filmmakersforfuture.org>");
+  Plugins::set("NEWSLETTER_SEND_PASSWORD", "\$2y\$10\$4dMNXZNHL/Or5imJbp0HQeUSKb/OwwClQQTFns9OioAU/V0RPxZ6u");
+  Plugins::set("DB_HOST",                  "10.35.47.209");
+  Plugins::set("DB_PORT",                  3306);
+  Plugins::set("DB_NAME",                  "k26460_fff");
+  Plugins::set("DB_USER",                  "k26460_fff");
+  Plugins::set("DB_PASS",                  "bwZkCKsj2Du9jJizbdGLqoAbEU7iKJKRJ3wynbDNfh3gs");
+  Plugins::set("CONTACT_SUBJECTS",         [["{%MAIL}"    => "contact@filmmakersforfuture.org",
+                                             "{%SUBJECT}" => "General"],
+                                            ["{%MAIL}"    => "contact@filmmakersforfuture.org",
+                                             "{%SUBJECT}" => "Update signature data"],
+                                            ["{%MAIL}"    => "groups@filmmakersforfuture.org",
+                                             "{%SUBJECT}" => "Working Group Invite"],
+                                            ["{%MAIL}"    => "videos@filmmakersforfuture.org",
+                                             "{%SUBJECT}" => "Submit video"],
+                                            ["{%MAIL}"    => "collaboration@filmmakersforfuture.org",
+                                             "{%SUBJECT}" => "Collaboration"],
+                                            ["{%MAIL}"    => "privacy@filmmakersforfuture.org",
+                                             "{%SUBJECT}" => "Privacy related"]]);
+  Plugins::set("VIDEOS",                    [["category" => "FRIDAYS FOR FUTURE",
+                                              "hoster"   => "YouTube",
+                                              "language" => "English + Subtitles",
+                                              "name"     => "Monster",
+                                              "thumb"    => "/user/uploads/img/videos/monster.jpg",
+                                              "url"      => "https://www.youtube-nocookie.com/embed/E73ag2Fvi3o"],
+                                             ["category" => "FRIDAYS FOR FUTURE",
+                                              "hoster"   => "YouTube",
+                                              "language" => "German + Subtitles",
+                                              "name"     => "9 months of protest",
+                                              "thumb"    => "/user/uploads/img/videos/9monthsfff.jpg",
+                                              "url"      => "https://www.youtube-nocookie.com/embed/-rsHwf56S3s"]]);
+
   // theme configuration
   Themes::set("copyright_html", fhtml("<div class=\"small text-center text-muted\">%s</div>".NL.
                                       "<div class=\"small text-center\">".NL.
@@ -39,9 +75,9 @@
                                       "  <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"%s\" title=\"%s\"><i style=\"font-size:2.5rem\" class=\"text-secondary fa fa-facebook mx-2\" aria-hidden=\"true\"></i></a>".NL.
                                       "</div>",
                                       "#Filmmakers4Future",
-                                      "/legal",
+                                      "/legal/",
                                       "Legal Disclosure",
-                                      "/privacy",
+                                      "/privacy/",
                                       "Privacy Policy",
                                       "/contact",
                                       "Contact",
@@ -60,15 +96,15 @@
   Themes::set(MENU,             [[TITLE => "Statement",
                                   URI   => "/#statement"],
                                  [TITLE => "Demands",
-                                  URI   => "/demands"],
+                                  URI   => "/demands/"],
                                  [TITLE => "Signatures",
                                   URI   => "/signatures"],
                                  [TITLE => "Green Filmmaking",
-                                  URI   => "/greenfilmmaking"],
+                                  URI   => "/greenfilmmaking/"],
                                  [TITLE => "Videos",
                                   URI   => "/videos"],
                                  [TITLE => "Participate",
-                                  URI   => "/participate"],
+                                  URI   => "/participate/"],
 #                                 [TITLE => "Services",
 #                                  URI   => "#",
 #                                  MENU  => [[TITLE => "Action",
