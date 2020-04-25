@@ -49,18 +49,18 @@
                                              "{%SUBJECT}" => "Collaboration"],
                                             ["{%MAIL}"    => "privacy@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "Privacy related"]]);
-  Plugins::set("VIDEOS",                    [["category" => "FRIDAYS FOR FUTURE",
-                                              "hoster"   => "YouTube",
-                                              "language" => "English + Subtitles",
-                                              "name"     => "Monster",
-                                              "thumb"    => "/user/uploads/img/videos/monster.jpg",
-                                              "url"      => "https://www.youtube-nocookie.com/embed/E73ag2Fvi3o"],
-                                             ["category" => "FRIDAYS FOR FUTURE",
-                                              "hoster"   => "YouTube",
-                                              "language" => "German + Subtitles",
-                                              "name"     => "9 months of protest",
-                                              "thumb"    => "/user/uploads/img/videos/9monthsfff.jpg",
-                                              "url"      => "https://www.youtube-nocookie.com/embed/-rsHwf56S3s"]]);
+  Plugins::set("VIDEOS",                    ["related_videos" => [["category" => "FRIDAYS FOR FUTURE",
+                                                                   "hoster"   => "YouTube",
+                                                                   "language" => "English + Subtitles",
+                                                                   "name"     => "Monster",
+                                                                   "thumb"    => "/user/uploads/img/videos/monster.jpg",
+                                                                   "url"      => "https://www.youtube-nocookie.com/embed/E73ag2Fvi3o"],
+                                                                  ["category" => "FRIDAYS FOR FUTURE",
+                                                                   "hoster"   => "YouTube",
+                                                                   "language" => "German + Subtitles",
+                                                                   "name"     => "9 months of protest",
+                                                                   "thumb"    => "/user/uploads/img/videos/9monthsfff.jpg",
+                                                                   "url"      => "https://www.youtube-nocookie.com/embed/-rsHwf56S3s"]]]);
 
   // theme configuration
   Themes::set("copyright_html", fhtml("<div class=\"small text-center text-muted\">%s</div>".NL.
