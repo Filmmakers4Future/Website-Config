@@ -4,7 +4,7 @@ thank you for being a part of Filmmakers for Future!
 
 In order to verify your signature please visit the following link and complete your submission:
 
-https://filmmakersforfuture.org/verify?uid={%UID}&user={%USER_VERIFY_TOKEN}
+https://filmmakersforfuture.org/verify/?uid={%UID}&user={%USER_VERIFY_TOKEN}
 
 If you have not entered your information on our website then please ignore this email. We will not contact you again.
 

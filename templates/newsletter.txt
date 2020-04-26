@@ -2,4 +2,4 @@ Dear {%NAME},
 
 
 
-Unsubscribe: https://filmmakersforfuture.org/newsletter?uid={%UID}&user={%USER_NEWSLETTER_TOKEN}
+Unsubscribe: https://filmmakersforfuture.org/newsletter/?uid={%UID}&user={%USER_NEWSLETTER_TOKEN}

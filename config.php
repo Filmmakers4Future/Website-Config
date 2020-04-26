@@ -79,11 +79,11 @@
                                       "Legal Disclosure",
                                       "/privacy/",
                                       "Privacy Policy",
-                                      "/contact",
+                                      "/contact/",
                                       "Contact",
-                                      "/newsletter",
+                                      "/newsletter/",
                                       "Manage Newsletter",
-                                      "/verify",
+                                      "/verify/",
                                       "Verify Signature",
                                       "https://www.instagram.com/filmmakers4future/",
                                       "Filmmakers4Future on Instagram",
@@ -98,11 +98,11 @@
                                  [TITLE => "Demands",
                                   URI   => "/demands/"],
                                  [TITLE => "Signatures",
-                                  URI   => "/signatures"],
+                                  URI   => "/signatures/"],
                                  [TITLE => "Green Filmmaking",
                                   URI   => "/greenfilmmaking/"],
                                  [TITLE => "Videos",
-                                  URI   => "/videos"],
+                                  URI   => "/videos/"],
                                  [TITLE => "Participate",
                                   URI   => "/participate/"],
 #                                 [TITLE => "Services",
@@ -115,10 +115,3 @@
 #                                             URI   => "#"]]],
                                  [TITLE => "Sign the Statement",
                                   URI   => "/#sign"]]);
-
-  // include the configuration for the Filmmakers for Future handler
-  function configure_fm4fhandler() {
-    require_once(__DIR__."/fm4fhandler.php");
-  }
-  Plugins::register(null, "configure_fm4fhandler", BEFORE_HANDLER);
-
