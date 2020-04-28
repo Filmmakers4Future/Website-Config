@@ -36,7 +36,7 @@
   Plugins::set("DB_PORT",                  3306);
   Plugins::set("DB_NAME",                  "k26460_fff");
   Plugins::set("DB_USER",                  "k26460_fff");
-  Plugins::set("DB_PASS",                  "bwZkCKsj2Du9jJizbdGLqoAbEU7iKJKRJ3wynbDNfh3gs");
+  Plugins::set("DB_PASS",                  "36N3ffjuDe96@e59@6L8ylgJ7be15z8Bb8w*2n");
   Plugins::set("CONTACT_SUBJECTS",         [["{%MAIL}"    => "contact@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "General"],
                                             ["{%MAIL}"    => "contact@filmmakersforfuture.org",
