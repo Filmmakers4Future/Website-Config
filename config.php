@@ -28,10 +28,10 @@
 
   // plugin configuration
   Plugins::set("ADMIN_MAIL",               "verification@filmmakersforfuture.org");
-  Plugins::set("MAILGUN_AUTH",             "api:key-d98741c10f55210aa8727f4d3141c4ea");
+  Plugins::set("MAILGUN_AUTH",             "***REMOVED***");
   Plugins::set("MAILGUN_ENDPOINT",         "https://api.eu.mailgun.net/v3/mg.filmmakersforfuture.org/messages");
   Plugins::set("MAILGUN_FROM",             "Filmmakers for Future <message@mg.filmmakersforfuture.org>");
-  Plugins::set("NEWSLETTER_SEND_PASSWORD", "\$2y\$10\$4dMNXZNHL/Or5imJbp0HQeUSKb/OwwClQQTFns9OioAU/V0RPxZ6u");
+  Plugins::set("NEWSLETTER_SEND_PASSWORD", "***REMOVED***");
   Plugins::set("DB_HOST",                  "10.35.47.209");
   Plugins::set("DB_PORT",                  3306);
   Plugins::set("DB_NAME",                  "k26460_fff");
