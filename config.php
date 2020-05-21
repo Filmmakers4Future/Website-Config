@@ -32,11 +32,11 @@
   Plugins::set("MAILGUN_ENDPOINT",         "https://api.eu.mailgun.net/v3/mg.filmmakersforfuture.org/messages");
   Plugins::set("MAILGUN_FROM",             "Filmmakers for Future <message@mg.filmmakersforfuture.org>");
   Plugins::set("NEWSLETTER_SEND_PASSWORD", "***REMOVED***");
-  Plugins::set("DB_HOST",                  "10.35.47.209");
+  Plugins::set("DB_HOST",                  "localhost");
   Plugins::set("DB_PORT",                  3306);
-  Plugins::set("DB_NAME",                  "k26460_fff");
-  Plugins::set("DB_USER",                  "k26460_fff");
-  Plugins::set("DB_PASS",                  "36N3ffjuDe96@e59@6L8ylgJ7be15z8Bb8w*2n");
+  Plugins::set("DB_NAME",                  "***REMOVED***");
+  Plugins::set("DB_USER",                  "***REMOVED***");
+  Plugins::set("DB_PASS",                  "***REMOVED***");
   Plugins::set("CONTACT_SUBJECTS",         [["{%MAIL}"    => "contact@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "General"],
                                             ["{%MAIL}"    => "contact@filmmakersforfuture.org",
@@ -99,12 +99,14 @@
                                   URI   => "/demands/"],
                                  [TITLE => "Signatures",
                                   URI   => "/signatures/"],
-                                 [TITLE => "Green Filmmaking",
-                                  URI   => "#",
-                                  MENU  => [[TITLE => "Getting started",
-                                             URI   => "/greenfilmmaking/"],
-                                            [TITLE => "Green production map",
-                                             URI   => "/map/"]]],
+                                  [TITLE => "Green Filmmaking",
+                                    URI   => "#",
+                                    MENU  => [[TITLE => "Getting Started",
+                                               URI   => "/greenfilmmaking/"],
+                                              [TITLE => "Green Production Map",
+                                               URI   => "/map/"],
+                                              [TITLE => "Green Production Wiki",
+                                               URI   => "https://wiki.fm4f.org"]]],
                                  [TITLE => "Videos",
                                   URI   => "/videos/"],
                                  [TITLE => "Participate",
