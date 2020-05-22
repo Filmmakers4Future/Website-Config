@@ -105,7 +105,7 @@
                                                URI   => "/greenfilmmaking/"],
                                               [TITLE => "Green Production Map",
                                                URI   => "/map/"],
-                                              [TITLE => "Green Production Wiki",
+                                              [TITLE => "Green Production Database",
                                                URI   => "https://wiki.fm4f.org"]]],
                                  [TITLE => "Videos",
                                   URI   => "/videos/"],
