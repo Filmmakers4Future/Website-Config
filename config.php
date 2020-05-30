@@ -16,16 +16,6 @@
   Main::set(ROOTURI,   "/");
   Main::set(THEMENAME, FM4FTheme::class);
 
-  // handler configuration
-  Handlers::set("podcast_author",      "Filmmakers for Future");
-  Handlers::set("podcast_category",    "Education");
-  Handlers::set("podcast_description", "This is the general podcast description of the Filmmakers for Future podcast.");
-  Handlers::set("podcast_explicit",    false);
-  Handlers::set("podcast_image",       "https://lexovo.de/user/uploads/lexovode_image.png");
-  Handlers::set("podcast_owner_email", "contact@filmmakersforfuture.org");
-  Handlers::set("podcast_owner_name",  "Filmmakers for Future");
-  Handlers::set("podcast_type",        "episodic");
-
   // plugin configuration
   Plugins::set("ADMIN_MAIL",               "verification@filmmakersforfuture.org");
   Plugins::set("MAILGUN_AUTH",             "***REMOVED***");
