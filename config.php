@@ -54,13 +54,22 @@
                                                                    "language" => "English + Subtitles",
                                                                    "name"     => "Monster",
                                                                    "thumb"    => "/user/uploads/img/videos/monster.jpg",
-                                                                   "url"      => "https://www.youtube-nocookie.com/embed/E73ag2Fvi3o"],
+                                                                   "url"      => "https://www.youtube-nocookie.com/embed/E73ag2Fvi3o?cc_load_policy=1&cc_lang_pref=en",
+                                                                   "class" => "col-lg-4 col-sm-6"],
                                                                   ["category" => "FRIDAYS FOR FUTURE",
                                                                    "hoster"   => "YouTube",
                                                                    "language" => "German + Subtitles",
                                                                    "name"     => "9 months of protest",
                                                                    "thumb"    => "/user/uploads/img/videos/9monthsfff.jpg",
-                                                                   "url"      => "https://www.youtube-nocookie.com/embed/-rsHwf56S3s"]]]);
+                                                                   "url"      => "https://www.youtube-nocookie.com/embed/-rsHwf56S3s?cc_load_policy=1&cc_lang_pref=en",
+                                                                   "class" => "col-lg-4 col-sm-6"]],
+                                             "statements" => [["category" => "Statements",
+                                                                   "hoster"   => "YouTube",
+                                                                   "language" => "German + Subtitles",
+                                                                   "name"     => "Lea van Acken",
+                                                                   "thumb"    => "/user/uploads/img/videos/statements/leavanacken.jpg",
+                                                                   "url"      => "https://www.youtube-nocookie.com/embed?listType=playlist&list=PLe6QMNKTPPoRaOM8ELolJXxV22QtIjrbu&cc_load_policy=1&cc_lang_pref=en",
+                                                                   "class" => "col-lg-3 col-md-4 col-sm-6"]]]);
 
   // theme configuration
   Themes::set("copyright_html", fhtml("<div class=\"small text-center text-muted\">%s</div>".NL.
