@@ -16,7 +16,13 @@
   Main::set(ROOTURI,   "/");
   Main::set(THEMENAME, FM4FTheme::class);
 
-  // plugin configuration
+  // Podlove plugin configuration
+  Plugins::set("PODLOVE_FEED_URL", "https://podcast.fm4f.org/feed.xml");
+  Plugins::set("PODLOVE_CONFIG_SPOTIFY_ID", "3JUfnybPrKH0AJ7aN39Slc");
+  Plugins::set("PODLOVE_APPLE_PODCAST_ID", "id1516179139");
+  Plugins::set("PODLOVE_YOUTUBE_ID", "UC-SNT4gGFgRiFb2iBccJDkw");
+  
+  // FM4F plugin configuration
   Plugins::set("ADMIN_MAIL",               "verification@filmmakersforfuture.org");
   Plugins::set("MAILGUN_AUTH",             "***REMOVED***");
   Plugins::set("MAILGUN_ENDPOINT",         "https://api.eu.mailgun.net/v3/mg.filmmakersforfuture.org/messages");
@@ -102,6 +108,8 @@
                                     URI   => "#",
                                     MENU  => [[TITLE => "Getting Started",
                                                URI   => "/greenfilmmaking/"],
+                                              [TITLE => "Podcast - Sustainability in Film",
+                                               URI   => "/podcast/"],
                                               [TITLE => "Green Production Map",
                                                URI   => "/map/"],
                                               [TITLE => "Green Production Database",
