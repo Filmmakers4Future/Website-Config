@@ -21,6 +21,16 @@
   Plugins::set("PODLOVE_CONFIG_SPOTIFY_ID", "3JUfnybPrKH0AJ7aN39Slc");
   Plugins::set("PODLOVE_APPLE_PODCAST_ID", "id1516179139");
   Plugins::set("PODLOVE_YOUTUBE_ID", "UC-SNT4gGFgRiFb2iBccJDkw");
+  Plugins::set("PODLOVE_THEME_COLORS", [
+          "brand" => "#1DA64AFF",
+          "brandDark" => "#512F9BFF",
+          "brandDarkest" => "#1A3A4A",
+          "brandLightest" => "#F0F5F1FF",
+          "shadeDark" => "#807E7C",
+          "shadeBase" => "#807E7C",
+          "contrast" => "#000",
+          "alt" => "#fff"
+        ]);
   
   // FM4F plugin configuration
   Plugins::set("ADMIN_MAIL",               "verification@filmmakersforfuture.org");
