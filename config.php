@@ -47,6 +47,8 @@
   Plugins::set("DB_PASS",                  $DB_PASS);
   Plugins::set("CONTACT_SUBJECTS",         [["{%MAIL}"    => "contact@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "General"],
+                                            ["{%MAIL}"    => "press@filmmakersforfuture.org",
+                                             "{%SUBJECT}" => "Press related inquiries"],
                                             ["{%MAIL}"    => "contact@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "Update signature data"],
                                             ["{%MAIL}"    => "groups@filmmakersforfuture.org",
