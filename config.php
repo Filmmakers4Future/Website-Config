@@ -81,7 +81,7 @@
   Themes::set("copyright_html", fhtml("<div class=\"small text-center text-muted\">%s</div>".NL.
                                       "<div class=\"small text-center\">".NL.
                                       "  <p class=\"text-muted\">".NL.
-                                      "    <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a><br>".NL.
+                                      "    <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a><br>".NL.
                                       "    <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a>".NL.
                                       "  </p>".NL.
                                       "  <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"%s\" title=\"%s\"><i style=\"font-size:2.5rem\" class=\"text-secondary fa fa-instagram mx-2\" aria-hidden=\"true\"></i></a>".NL.
@@ -96,6 +96,8 @@
                                       "Privacy Policy",
                                       "/contact/",
                                       "Contact",
+                                      "/pressreleases/",
+                                      "Press Releases",
                                       "/newsletter/",
                                       "Manage Newsletter",
                                       "/verify/",
