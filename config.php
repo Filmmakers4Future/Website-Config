@@ -3,6 +3,8 @@
   // prevent script from getting called directly
   if (!defined("URLAUBE")) { die(""); }
 
+  include 'secrets/secrets.php';
+  
   // !!! COMMENT THIS OUT FOR PRODUCTION
   //Main::set(DEBUGMODE, true);
   //Main::set(LOGLEVEL,  Logging::INFO);
@@ -34,15 +36,15 @@
   
   // FM4F plugin configuration
   Plugins::set("ADMIN_MAIL",               "verification@filmmakersforfuture.org");
-  Plugins::set("MAILGUN_AUTH",             "***REMOVED***");
+  Plugins::set("MAILGUN_AUTH",             $MAILGUN_AUTH);
   Plugins::set("MAILGUN_ENDPOINT",         "https://api.eu.mailgun.net/v3/mg.filmmakersforfuture.org/messages");
   Plugins::set("MAILGUN_FROM",             "Filmmakers for Future <message@mg.filmmakersforfuture.org>");
-  Plugins::set("NEWSLETTER_SEND_PASSWORD", "***REMOVED***");
+  Plugins::set("NEWSLETTER_SEND_PASSWORD", $NEWSLETTER_SEND_PASSWORD);
   Plugins::set("DB_HOST",                  "localhost");
   Plugins::set("DB_PORT",                  3306);
-  Plugins::set("DB_NAME",                  "***REMOVED***");
-  Plugins::set("DB_USER",                  "***REMOVED***");
-  Plugins::set("DB_PASS",                  "***REMOVED***");
+  Plugins::set("DB_NAME",                  $DB_NAME);
+  Plugins::set("DB_USER",                  $DB_USER);
+  Plugins::set("DB_PASS",                  $DB_PASS);
   Plugins::set("CONTACT_SUBJECTS",         [["{%MAIL}"    => "contact@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "General"],
                                             ["{%MAIL}"    => "contact@filmmakersforfuture.org",

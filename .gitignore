@@ -5,6 +5,10 @@
 errors/*
 !errors/.gitkeep
 
+# do not publish application secrets
+secrets/*
+!secrets/.gitkeep
+
 # do not publish macOS blergh
 ._*
 .DS_Store
