@@ -8,17 +8,21 @@ sudo apt-get install nginx php-fpm php-curl php-mysqli mariadb-server
 sudo git clone https://github.com/urlaube/urlaube /var/www/html
 
 sudo git clone https://github.com/filmmakers4future/fm4fhandler /var/www/html/user/handlers/fm4fhandler
-sudo git clone https://github.com/urlaube/podcastfeedhandler /var/www/html/user/handlers/podcastfeedhandler
 
 sudo git clone https://github.com/filmmakers4future/fm4fplugin /var/www/html/user/plugins/fm4fplugin
 sudo git clone https://github.com/urlaube/hidefuturedate /var/www/html/user/plugins/hidefuturedate
-sudo git clone https://github.com/urlaube/podcastaudioplugin /var/www/html/user/plugins/podcastaudioplugin
+sudo git clone https://github.com/urlaube/PodlovePlugin /var/www/html/user/plugins/PodlovePlugin
 
 sudo git clone https://github.com/filmmakers4future/fm4ftheme /var/www/html/user/themes/fm4ftheme
 
 cd /var/www/html/user/config
 sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-config
+sudo git pull origin master
+
+cd /var/www/html/user/config/secrets
+sudo git init
+sudo git remote add origin git@github.com:Filmmakers4Future/Websites-Secrets.git
 sudo git pull origin master
 
 cd /var/www/html/user/content
