@@ -2,7 +2,7 @@
 
 ## Install the software
 
-```
+```bash
 sudo apt-get install nginx php-fpm php-curl php-mysqli mariadb-server
 
 sudo git clone https://github.com/urlaube/urlaube /var/www/html
@@ -20,6 +20,7 @@ sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-config
 sudo git pull origin master
 
+# For production installation - else check "Sample secret/secrets.php"
 cd /var/www/html/user/config/secrets
 sudo git init
 sudo git remote add origin git@github.com:Filmmakers4Future/Websites-Secrets.git
@@ -35,6 +36,26 @@ sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-uploads
 sudo git pull origin master
 ```
+
+## Sample secret/secrets.php
+
+```php
+<?php
+
+  // prevent script from getting called directly
+  if (!defined("URLAUBE")) { die(""); }
+
+  $MAILGUN_AUTH = "api:key-12345678910111213";
+  
+  // php -r 'print(str_replace("\$", "\\\$", password_hash(readline("Password: "), PASSWORD_DEFAULT)."\n"));'
+  $NEWSLETTER_SEND_PASSWORD = "12345678910111213";
+  
+  $DB_NAME = "db_name";
+  $DB_USER = "db_user";
+  $DB_PASS = "12345678910111213";
+```
+
+
 
 ## Configure the webserver
 
