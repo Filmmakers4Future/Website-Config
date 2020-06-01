@@ -3,34 +3,43 @@
 ## Install the software
 
 ```bash
+# Install webserver and database (Debian based Systems)
 sudo apt-get install nginx php-fpm php-curl php-mysqli mariadb-server
 
+# Clone Urlaube CMS
 sudo git clone https://github.com/urlaube/urlaube /var/www/html
 
+# Install Fm4F Handler for Urlaube
 sudo git clone https://github.com/filmmakers4future/fm4fhandler /var/www/html/user/handlers/fm4fhandler
 
+# Installed required plugins for Urlaube
 sudo git clone https://github.com/filmmakers4future/fm4fplugin /var/www/html/user/plugins/fm4fplugin
 sudo git clone https://github.com/urlaube/hidefuturedate /var/www/html/user/plugins/hidefuturedate
 sudo git clone https://github.com/urlaube/PodlovePlugin /var/www/html/user/plugins/PodlovePlugin
 
+# Install Fm4F Urlaube theme
 sudo git clone https://github.com/filmmakers4future/fm4ftheme /var/www/html/user/themes/fm4ftheme
 
+# Add Fm4F configuration to Urlaube
 cd /var/www/html/user/config
 sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-config
 sudo git pull origin master
 
-# For production installation - else check "Sample secret/secrets.php"
+# Add Fm4F application secrets to configuration
+# For production installation only - else check "Sample secret/secrets.php"
 cd /var/www/html/user/config/secrets
 sudo git init
 sudo git remote add origin git@github.com:Filmmakers4Future/Websites-Secrets.git
 sudo git pull origin master
 
+# Add Fm4F website content to Urlaube
 cd /var/www/html/user/content
 sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-content
 sudo git pull origin master
 
+# Add Fm4F uploads to Urlaube
 cd /var/www/html/user/uploads
 sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-uploads
@@ -112,7 +121,7 @@ server {
 sudo systemctl restart nginx.service
 ```
 
-## Setup the database
+## Setup the database for statement signatures
 
 ### Log into the MariaDB database
 
