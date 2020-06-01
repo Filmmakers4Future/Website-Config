@@ -67,7 +67,7 @@ sudo vi /etc/nginx/sites-enabled/default
 
 ### Insert the configuration:
 
-```
+```nginx
 server {
   listen 80 default_server;
   listen [::]:80 default_server;
@@ -108,7 +108,7 @@ server {
 
 ### Restart the webserver
 
-```
+```bash
 sudo systemctl restart nginx.service
 ```
 
@@ -116,13 +116,13 @@ sudo systemctl restart nginx.service
 
 ### Log into the MariaDB database
 
-```
+```bash
 sudo mysql
 ```
 
 ### Execute the SQL statements
 
-```
+```sql
 CREATE DATABASE fff CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE fff;
