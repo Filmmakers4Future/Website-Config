@@ -20,7 +20,7 @@
 
   // Podlove plugin configuration
   Plugins::set("PODLOVE_FEED_URL", "https://podcast.fm4f.org/feed.xml");
-  Plugins::set("PODLOVE_CONFIG_SPOTIFY_ID", "3JUfnybPrKH0AJ7aN39Slc");
+  Plugins::set("PODLOVE_SPOTIFY_ID", "3JUfnybPrKH0AJ7aN39Slc");
   Plugins::set("PODLOVE_APPLE_PODCAST_ID", "id1516179139");
   Plugins::set("PODLOVE_YOUTUBE_ID", "UC-SNT4gGFgRiFb2iBccJDkw");
   Plugins::set("PODLOVE_THEME_COLORS", [
