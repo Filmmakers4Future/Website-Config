@@ -22,6 +22,8 @@
   Plugins::set("PODLOVE_FEED_URL", "https://podcast.fm4f.org/feed.xml");
   Plugins::set("PODLOVE_SPOTIFY_ID", "3JUfnybPrKH0AJ7aN39Slc");
   Plugins::set("PODLOVE_APPLE_PODCAST_ID", "id1516179139");
+  Plugins::set("PODLOVE_GOOGLE_PODCAST", True);
+  Plugins::set("PODLOVE_POCKET_CASTS", True);
   Plugins::set("PODLOVE_YOUTUBE_ID", "UC-SNT4gGFgRiFb2iBccJDkw");
   Plugins::set("PODLOVE_THEME_COLORS", [
           "brand" => "#1DA64AFF",
@@ -49,7 +51,9 @@
                                              "{%SUBJECT}" => "General"],
                                             ["{%MAIL}"    => "press@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "Press related inquiries"],
-                                            ["{%MAIL}"    => "contact@filmmakersforfuture.org",
+                                            ["{%MAIL}"    => "podcast@filmmakersforfuture.org",
+                                             "{%SUBJECT}" => "Podcast"],
+                                            ["{%MAIL}"    => "signatures@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "Update signature data"],
                                             ["{%MAIL}"    => "groups@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "Working Group Invite"],
