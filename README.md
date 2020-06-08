@@ -24,26 +24,26 @@ sudo git clone https://github.com/filmmakers4future/fm4ftheme /var/www/html/user
 cd /var/www/html/user/config
 sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-config
-sudo git pull origin master
+sudo git pull origin main
 
 # Add Fm4F application secrets to configuration
 # For production installation only - else check "Sample secret/secrets.php"
 cd /var/www/html/user/config/secrets
 sudo git init
 sudo git remote add origin git@github.com:Filmmakers4Future/Websites-Secrets.git
-sudo git pull origin master
+sudo git pull origin main
 
 # Add Fm4F website content to Urlaube
 cd /var/www/html/user/content
 sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-content
-sudo git pull origin master
+sudo git pull origin main
 
 # Add Fm4F uploads to Urlaube
 cd /var/www/html/user/uploads
 sudo git init
 sudo git remote add origin https://github.com/filmmakers4future/website-uploads
-sudo git pull origin master
+sudo git pull origin main
 ```
 
 ## Sample secret/secrets.php
