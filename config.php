@@ -55,8 +55,6 @@
                                              "{%SUBJECT}" => "Podcast"],
                                             ["{%MAIL}"    => "signatures@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "Update signature data"],
-                                            ["{%MAIL}"    => "groups@filmmakersforfuture.org",
-                                             "{%SUBJECT}" => "Working Group Invite"],
                                             ["{%MAIL}"    => "videos@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "Submit video"],
                                             ["{%MAIL}"    => "collaboration@filmmakersforfuture.org",
