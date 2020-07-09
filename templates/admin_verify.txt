@@ -7,6 +7,11 @@ Job:        {%JOB}
 Website:    {%WEBSITE}
 Country:    {%COUNTRY}
 
+References: 
+---
+{%INDUSTRY_REFERENCES}
+---
+
 In order to verify the submission please visit the following link and complete the registration:
 
 https://filmmakersforfuture.org/verify/?uid={%UID}&admin={%ADMIN_VERIFY_TOKEN}
