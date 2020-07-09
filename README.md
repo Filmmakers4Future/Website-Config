@@ -144,6 +144,7 @@ CREATE TABLE data (
 	country               VARCHAR(256) NOT NULL,
 	city                  VARCHAR(256),
 	website               VARCHAR(256),
+	industry_references   VARCHAR(1000),
 	iscompany             BOOLEAN      NOT NULL DEFAULT FALSE,
 	newsletter            BOOLEAN      NOT NULL DEFAULT FALSE,
 	disabled              BOOLEAN      NOT NULL DEFAULT FALSE,
