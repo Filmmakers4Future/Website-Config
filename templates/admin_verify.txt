@@ -9,7 +9,7 @@ Country:    {%COUNTRY}
 
 References: 
 ---
-{%INDUSTRY_REFERENCES}
+{%VERIFY_HINTS}
 ---
 
 In order to verify the submission please visit the following link and complete the registration:
