@@ -116,8 +116,8 @@
                                       "Filmmakers4Future on Twitter",
                                       "https://facebook.com/filmmakersforfuture",
                                       "Filmmakers4Future on Facebook"));
-  Themes::set(MENU,             [[TITLE => "Statement",
-                                  URI   => "/#statement"],
+  Themes::set(MENU,             [[TITLE => "Events",
+                                  URI   => "/events/"],
                                  [TITLE => "Demands",
                                   URI   => "/demands/"],
                                  [TITLE => "Signatures",
