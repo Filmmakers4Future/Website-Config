@@ -7,6 +7,7 @@
   
   include 'language/en/videos.php';
   include 'language/en/theme.php';
+  include 'language/en/calendar.php';
   
   // !!! COMMENT THIS OUT FOR PRODUCTION
   //Main::set(DEBUGMODE, true);
