@@ -16,6 +16,7 @@ sudo git clone https://github.com/filmmakers4future/fm4fhandler /var/www/html/us
 sudo git clone https://github.com/filmmakers4future/fm4fplugin /var/www/html/user/plugins/fm4fplugin
 sudo git clone https://github.com/urlaube/hidefuturedate /var/www/html/user/plugins/hidefuturedate
 sudo git clone https://github.com/urlaube/PodlovePlugin /var/www/html/user/plugins/PodlovePlugin
+sudo git clone https://github.com/Filmmakers4Future/CalendarPlugin /var/www/html/user/plugins/CalendarPlugin
 
 # Install Fm4F Urlaube theme
 sudo git clone https://github.com/filmmakers4future/fm4ftheme /var/www/html/user/themes/fm4ftheme
