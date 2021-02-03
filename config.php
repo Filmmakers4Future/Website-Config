@@ -4,10 +4,7 @@
   if (!defined("URLAUBE")) { die(""); }
 
   include 'secrets/secrets.php';
-  
-  include 'language/en/videos.php';
-  include 'language/en/theme.php';
-  include 'language/en/calendar.php';
+  include 'language.php';
   
   // !!! COMMENT THIS OUT FOR PRODUCTION
   //Main::set(DEBUGMODE, true);
@@ -65,3 +62,84 @@
                                              "{%SUBJECT}" => "Collaboration"],
                                             ["{%MAIL}"    => "privacy@filmmakersforfuture.org",
                                              "{%SUBJECT}" => "Privacy related"]]);
+  
+  // theme configuration
+  Themes::set("copyright_html", fhtml(      "<div class=\"small text-center text-muted\">%s</div>".NL.
+                                            "<div class=\"small text-center\">".NL.
+                                            "  <p class=\"text-muted\">".NL.
+                                            "    <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a><br>".NL.
+                                            "    <a href=\"%s\">%s</a> · <a href=\"%s\">%s</a>".NL.
+                                            "  </p>".NL.
+                                            "  <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"%s\" title=\"%s\"><i style=\"font-size:2.5rem\" class=\"text-secondary fa fa-instagram mx-2\" aria-hidden=\"true\"></i></a>".NL.
+                                            "  <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"%s\" title=\"%s\"><i style=\"font-size:2.5rem\" class=\"text-secondary fa fa-youtube mx-2\" aria-hidden=\"true\"></i></a>".NL.
+                                            "  <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"%s\" title=\"%s\"><i style=\"font-size:2.5rem\" class=\"text-secondary fa fa-twitter mx-2\" aria-hidden=\"true\"></i></a>".NL.
+                                            "  <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"%s\" title=\"%s\"><i style=\"font-size:2.5rem\" class=\"text-secondary fa fa-facebook mx-2\" aria-hidden=\"true\"></i></a>".NL.
+                                            "</div>".NL.
+                                            "<div class=\"small text-center\" id=\"LanguagePicker\">".NL.
+                                            getLanguagePicker($supportedLanguages).NL.
+                                            "</div>",
+                                            "#Filmmakers4Future",
+                                            "/".$lang."/legal/",
+                                            $footerText["LEGAL"],
+                                            "/".$lang."/privacy/",
+                                            $footerText["PRIVACY"],
+                                            "/".$lang."/contact/",
+                                            $footerText["CONTACT"],
+                                            "/".$lang."/pressreleases/",
+                                            $footerText["PRESSRELEASES"],
+                                            "/".$lang."/newsletter/",
+                                            $footerText["MANAGENEWSLETTER"],
+                                            "/".$lang."/verify/",
+                                            $footerText["VERIFYSIGNATURE"],
+                                            "https://www.instagram.com/filmmakers4future/",
+                                            $footerText["FM4FINSTAGRAM"],
+                                            "https://www.youtube.com/channel/UC-SNT4gGFgRiFb2iBccJDkw/",
+                                            $footerText["FM4FYOUTUBE"],
+                                            "https://twitter.com/Filmmakers4F",
+                                            $footerText["FM4FTWITTER"],
+                                            "https://facebook.com/filmmakersforfuture",
+                                            $footerText["FM4FFACEBOOK"]));
+  
+  Themes::set(MENU,                       [[TITLE => $menuText["EVENTS"],
+                                            URI   => "/".$lang."events/"],
+                                            [TITLE => $menuText["DEMANDS"],
+                                              URI   => "/".$lang."/demands/"],
+                                            [TITLE => $menuText["SIGNATURES"],
+                                              URI   => "/".$lang."/signatures/"],
+                                            [TITLE => $menuText["GREENFILMMAKING"],
+                                              URI   => "#",
+                                              MENU  => [[TITLE => $menuText["RESOURCES"]],
+                                                [TITLE => $menuText["GETTINGSTARTED"],
+                                                  URI   => "/".$lang."/greenfilmmaking/"],
+                                                [TITLE => $menuText["PODCAST"],
+                                                  URI   => "/".$lang."/podcast/"],
+                                                [TITLE => "divider"],
+                                                [TITLE => $menuText["TOOLS"]],
+                                                [TITLE => $menuText["MAP"],
+                                                  URI   => "/".$lang."//map/"],
+                                                [TITLE => $menuText["WIKI"],
+                                                  URI   => "https://wiki.fm4f.org"]]],
+                                            [TITLE => $menuText["VIDEOS"],
+                                              URI   => "/".$lang."/videos/"],
+                                            [TITLE => $menuText["PARTICIPATE"],
+                                              URI   => "#",
+                                              MENU  => [[TITLE => $menuText["GROUPS"]],
+                                                [TITLE => $menuText["ABOUTGROUPS"],
+                                                  URI   => "/".$lang."/groups/"],
+                                                [TITLE => $menuText["LOGIN"],
+                                                  URI   => "https://groups.fm4f.org/"],
+                                                [TITLE => "divider"],
+                                                [TITLE => $menuText["TOOLS"]],
+                                                [TITLE => $menuText["INVITE"],
+                                                  URI  => "/".$lang."/invite/"],
+                                                [TITLE => "divider"],
+                                                [TITLE => $menuText["Miscellaneous"]],
+                                                [TITLE => $menuText["GRAPHICS"],
+                                                  URI  => "/".$lang."/graphics/"],
+                                                [TITLE => $menuText["CREWUNITED"],
+                                                  URI => "/".$lang."/crew-united/"],
+                                                [TITLE => $menuText["WEBSITE"],
+                                                  URI => "/".$lang."/website/"],
+                                              ]],
+                                            [TITLE => $menuText["SIGN"],
+                                              URI   => "/".$lang."/index#sign"]]);
