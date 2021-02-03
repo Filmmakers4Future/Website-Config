@@ -101,7 +101,7 @@
                                             $footerText["FM4FFACEBOOK"]));
   
   Themes::set(MENU,                       [[TITLE => $menuText["EVENTS"],
-                                            URI   => "/".$lang."events/"],
+                                            URI   => "/".$lang."/events/"],
                                             [TITLE => $menuText["DEMANDS"],
                                               URI   => "/".$lang."/demands/"],
                                             [TITLE => $menuText["SIGNATURES"],
