@@ -11,6 +11,14 @@
   if ($_SERVER['REQUEST_URI'] == "/") {
     header("Location: /".$lang."/index");
     exit;
+  } else {
+    $URI = explode("/", $_SERVER['REQUEST_URI']);
+    if (!in_array($URI[1], array_keys($supportedLanguages))) {
+      array_splice( $URI, 1, 0, $lang );
+      header("Location: ".implode("/", $URI));
+      exit;
+    }
+    
   }
   
   // Check choosen language and choose correct config files
