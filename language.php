@@ -9,7 +9,7 @@
   $lang = isset($lang) ? $lang : 'en'; 
   
   if ($_SERVER['REQUEST_URI'] == "/") {
-    header("Location: /".$lang."/index");
+    header("Location: /".$lang."/");
     exit;
   } else {
     $URI = explode("/", $_SERVER['REQUEST_URI']);

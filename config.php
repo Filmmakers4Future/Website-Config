@@ -142,4 +142,4 @@
                                                   URI => "/".$lang."/website/"],
                                               ]],
                                             [TITLE => $menuText["SIGN"],
-                                              URI   => "/".$lang."/index#sign"]]);
+                                              URI   => "/".$lang."/#sign"]]);
