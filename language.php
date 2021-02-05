@@ -14,9 +14,11 @@
   } else {
     $URI = explode("/", $_SERVER['REQUEST_URI']);
     if (!in_array($URI[1], array_keys($supportedLanguages))) {
-      array_splice( $URI, 1, 0, $lang );
-      header("Location: ".implode("/", $URI));
-      exit;
+      if (stripos($URI[1], "category") === false) {
+        array_splice( $URI, 1, 0, $lang );
+        header("Location: ".implode("/", $URI));
+        exit;
+      }
     }
     
   }
