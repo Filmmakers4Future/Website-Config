@@ -2,7 +2,8 @@
   
   // Check browser language and redirect
   $supportedLanguages = [
-    "en" => "English"
+    "en" => "English",
+    "de" => "Deutsch"
   ];
   
   $lang = prefered_language($supportedLanguages, $_SERVER["HTTP_ACCEPT_LANGUAGE"]);
@@ -25,6 +26,11 @@
   
   // Check choosen language and choose correct config files
   switch (explode("/", $_SERVER['REQUEST_URI'])[1]) {
+    case "de":
+      include 'language/de/videos.php';
+      include 'language/de/theme.php';
+      include 'language/de/calendar.php';
+      break;
     default:
       include 'language/en/videos.php';
       include 'language/en/theme.php';
