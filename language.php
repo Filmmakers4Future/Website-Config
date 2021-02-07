@@ -2,18 +2,22 @@
   
   // Check browser language and redirect
   $supportedLanguages = [
-    "en" => "English",
-    "de" => "Deutsch"
+    "en" => "English"
   ];
   
-  $lang = prefered_language($supportedLanguages, $_SERVER["HTTP_ACCEPT_LANGUAGE"]);
-  $lang = isset($lang) ? $lang : 'en'; 
+  $URI = explode("/", $_SERVER['REQUEST_URI']);
+  
+  if (in_array($URI[1], array_keys($supportedLanguages))) {
+    $lang = $URI[1];
+  } else {
+    $lang = prefered_language($supportedLanguages, $_SERVER["HTTP_ACCEPT_LANGUAGE"]);
+    $lang = isset($lang) ? $lang : 'en'; 
+  }
   
   if ($_SERVER['REQUEST_URI'] == "/") {
     header("Location: /".$lang."/");
     exit;
   } else {
-    $URI = explode("/", $_SERVER['REQUEST_URI']);
     if (!in_array($URI[1], array_keys($supportedLanguages))) {
       if (stripos($URI[1], "category") === false) {
         array_splice( $URI, 1, 0, $lang );
@@ -25,12 +29,7 @@
   }
   
   // Check choosen language and choose correct config files
-  switch (explode("/", $_SERVER['REQUEST_URI'])[1]) {
-    case "de":
-      include 'language/de/videos.php';
-      include 'language/de/theme.php';
-      include 'language/de/calendar.php';
-      break;
+  switch ($lang) {
     default:
       include 'language/en/videos.php';
       include 'language/en/theme.php';
@@ -77,3 +76,4 @@
     }
     return rtrim($html, " · ");
   }
+  
