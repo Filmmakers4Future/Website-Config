@@ -85,7 +85,7 @@
                                             $footerText["PRIVACY"],
                                             "/".$lang."/contact/",
                                             $footerText["CONTACT"],
-                                            "/".$lang."/posts/pressreleases/",
+                                            "/".$lang."/posts/press_releases/",
                                             $footerText["PRESSRELEASES"],
                                             "/".$lang."/newsletter/",
                                             $footerText["MANAGENEWSLETTER"],
