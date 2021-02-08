@@ -2,7 +2,7 @@
   
   // Check browser language and redirect
   $supportedLanguages = [
-    "en" => "English"
+    "en" => ["English", "en_US"]
   ];
   
   $URI = explode("/", $_SERVER['REQUEST_URI']);
@@ -13,6 +13,8 @@
     $lang = prefered_language($supportedLanguages, $_SERVER["HTTP_ACCEPT_LANGUAGE"]);
     $lang = isset($lang) ? $lang : 'en'; 
   }
+
+  Main::set(LANGUAGE,  $supportedLanguages[$lang][1]);
   
   if ($_SERVER['REQUEST_URI'] == "/") {
     header("Location: /".$lang."/");
@@ -72,7 +74,7 @@
     $currentURI = implode("/", $currentURI);
     $html = "";
     foreach ($languages as $short => $name) {
-      $html .= "<a href=\"/".$short.$currentURI."\">".$name."</a> · ";
+      $html .= "<a href=\"/".$short.$currentURI."\">".$name[0]."</a> · ";
     }
     return rtrim($html, " · ");
   }

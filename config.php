@@ -13,7 +13,6 @@
   // main configuration
   Main::set(CACHE,     true); // !!! SET THIS TO TRUE FOR PRODUCTION
   Main::set(HOSTNAME,  "filmmakersforfuture.org");
-  Main::set(LANGUAGE,  "en_US");
   Main::set(PORT,      "443");
   Main::set(PROTOCOL,  "https://");
   Main::set(ROOTURI,   "/");
