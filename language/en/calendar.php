@@ -9,7 +9,7 @@ Plugins::set("CALENDAR_DATA", [
     "date" => "22/10/2020 20:00:00",
     "timezone" => "Europe/Berlin",
     "summary" => "Our Veronika Große will join a panel at the Sustainable Production Forum this year!",
-    "image" => "/user/uploads/img/pressreleases/spf_2020/Veronika.jpg",
+    "image" => "/user/uploads/img/posts/press_releases/spf_2020/Veronika.jpg",
     "link" => "/en/posts/events/2020-10-18-fm4f-at-spf-2020/",
     "tags" => [
       "Conference",
