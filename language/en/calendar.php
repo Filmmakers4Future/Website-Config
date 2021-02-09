@@ -26,7 +26,7 @@ Plugins::set("CALENDAR_DATA", [
       "Green Consulting",
       "Online"
   ]],
-  ["title" => "Set Designer: Olivier Meidinger, VSK",
+  ["title" => "Production Designer: Olivier Meidinger, VSK",
     "date" => "26/02/2021 19:30:00",
     "timezone" => "Europe/Berlin",
     "summary" => "A lot of \"green\" can happen in the art department: Reuse of old film sets (or parts of them), use of new kinds of materials. Rethinking is the order of the day! Olivier tells us how he does it.",
