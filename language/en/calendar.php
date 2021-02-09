@@ -18,7 +18,7 @@ Plugins::set("CALENDAR_DATA", [
   ["title" => "Green Consultant: Korina Gutsche",
     "date" => "19/02/2021 19:00:00",
     "timezone" => "Europe/Berlin",
-    "summary" => "The Green Consultant is where all the threads come together. This profession is also a vocation! Sustainability is in Korina's blood.",
+    "summary" => "Green Consultants ensure that film and media production is as resource-friendly as possible. It's where all the threads come together. This profession is a vocation! Sustainability plays the main role for Korina.",
     "image" => "/user/uploads/img/posts/events/talks/2021/korina_gutsche.jpg",
     "link" => "/en/posts/events/2021-02-09-hands-on-talks-korina-gutsche/",
     "tags" => [
@@ -62,7 +62,7 @@ Plugins::set("CALENDAR_DATA", [
   ["title" => "Costume Designer: Tini Fetscher",
     "date" => "19/03/2021 19:30:00",
     "timezone" => "Europe/Berlin",
-    "summary" => "Many have already heard about the grim environmental footprint of the fashion industry. Tini tells us how to significantly improve the footprint in the costume sector. Or should we say: she tells us all about it?",
+    "summary" => "Many have already heard about the grim environmental impact of the fashion industry. Tini tells us how to significantly improve the footprint in the costume department. One thing is for sure: She won't spin a yarn!",
     "image" => "/user/uploads/img/posts/events/talks/2021/tini_fetscher.jpg",
     "link" => "/en/posts/events/2021-02-09-hands-on-talks-tini-fetscher/",
     "tags" => [
