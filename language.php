@@ -21,7 +21,7 @@
     exit;
   } else {
     if (!in_array($URI[1], array_keys($supportedLanguages))) {
-      if (stripos($URI[1], "category") === false and $URI[1] != "sitemap.xml") {
+      if (stripos($URI[1], "=") === false and $URI[1] != "sitemap.xml") {
         array_splice( $URI, 1, 0, $lang );
         header("Location: ".implode("/", $URI));
         exit;
