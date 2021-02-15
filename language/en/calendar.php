@@ -37,7 +37,7 @@ Plugins::set("CALENDAR_DATA", [
       "Set Designer",
       "Online"
   ]],
-  ["title" => "Light Designer: Adriano Grilli",
+  ["title" => "Light Designer: Adriano Grilli, BVB",
     "date" => "05/03/2021 19:30:00",
     "timezone" => "Europe/Berlin",
     "summary" => "When it comes to light, many people first think of LEDs. But is that really the case? And is that really all there is to it? Adriano will enlighten us on the subject.",
