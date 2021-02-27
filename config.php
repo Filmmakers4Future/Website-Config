@@ -117,7 +117,7 @@
                                                 [TITLE => $menuText["MAP"],
                                                   URI   => "/".$lang."//map/"],
                                                 [TITLE => $menuText["WIKI"],
-                                                  URI   => "https://wiki.fm4f.org"]]],
+                                                  URI   => "https://knowledge.fm4f.org"]]],
                                             [TITLE => $menuText["VIDEOS"],
                                               URI   => "/".$lang."/videos/"],
                                             [TITLE => $menuText["PARTICIPATE"],
