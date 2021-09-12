@@ -81,4 +81,15 @@ Plugins::set("CALENDAR_DATA", [
       "Post Production",
       "Online"
   ]],
+  ["title" => "Global Climate Strike",
+    "date" => "24/09/2021 12:00:00",
+    "timezone" => "Europe/Berlin",
+    "summary" => "The global climate justice movement has announced a global climate strike for the end of September. Filmmakers for Future is calling on every single person, especially from the film industry, to join the STRIKE!",
+    "image" => "/user/uploads/img/posts/events/strikes/2021/global-climate-strike-september-2021.jpg",
+    "link" => "/en/posts/events/2021-09-12-global-climate-strike-september-2021/",
+    "tags" => [
+      "Fridays for Future",
+      "Filmstrike for Climate",
+      "Uproot The System"
+    ]],
 ]);
