@@ -3,7 +3,7 @@
   // prevent script from getting called directly
   if (!defined("URLAUBE")) { die(""); }
 
-  //include 'secrets/secrets.php';
+  include 'secrets/secrets.php';
   include 'language.php';
   
   // !!! COMMENT THIS OUT FOR PRODUCTION
@@ -11,10 +11,10 @@
   //Main::set(LOGLEVEL,  Logging::INFO);
 
   // main configuration
-  Main::set(CACHE,     false); // !!! SET THIS TO TRUE FOR PRODUCTION
-  Main::set(HOSTNAME,  "localhost");
-  Main::set(PORT,      "8080");
-  Main::set(PROTOCOL,  "http://");
+  Main::set(CACHE,     true); // !!! SET THIS TO TRUE FOR PRODUCTION
+  Main::set(HOSTNAME,  "filmmakersforfuture.org");
+  Main::set(PORT,      "443");
+  Main::set(PROTOCOL,  "https://");
   Main::set(ROOTURI,   "/");
   Main::set(THEMENAME, FM4FTheme::class);
 
