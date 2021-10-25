@@ -5,7 +5,7 @@
     "en" => ["English", "en_US"]
   ];
 
-  $URI = explode("/", value(Main, URI));
+  $URI = explode("/", value(Main::class, URI));
 
   if (array_key_exists($URI[1], $supportedLanguages)) {
     $lang = $URI[1];
@@ -14,9 +14,9 @@
     $lang = isset($lang) ? $lang : 'en'; 
   }
 
-  Main::set(LANGUAGE,  $supportedLanguages[$lang][1]);
+  Main::set(LANGUAGE, $supportedLanguages[$lang][1]);
 
-  if (0 === strcmp(value(Main, URI), "/")) {
+  if (0 === strcmp(value(Main::class, URI), "/")) {
     $target = "/$lang/";
     if (isset($_SERVER["QUERY_STRING"])) {
       $target .= "?".$_SERVER["QUERY_STRING"];
@@ -27,7 +27,13 @@
   } else {
     if (!array_key_exists($URI[1], $supportedLanguages)) {
       if ((stripos($URI[1], "=") === false) && (0 !== strcmp($URI[1], "sitemap.xml"))) {
-        array_splice($URI, 1, 1, $lang);
+        if (2 === strlen($URI[1])) {
+          # replace unknown language
+          array_splice($URI, 1, 1, $lang);
+        } else {
+          # prepend default language
+          array_splice($URI, 1, 0, $lang);
+        }
 
         $target = implode("/", $URI);
         if (isset($_SERVER["QUERY_STRING"])) {
@@ -85,7 +91,7 @@
   }
 
   function getLanguagePicker($languages) {
-    $currentURI = explode("/", value(Main, URI));
+    $currentURI = explode("/", value(Main::class, URI));
     unset($currentURI[1]);
     $currentURI = implode("/", $currentURI);
     $html = "";
