@@ -39,8 +39,8 @@
   // FM4F plugin configuration
   Plugins::set("ADMIN_MAIL",               "verification@filmmakersforfuture.org");
   Plugins::set("MAILGUN_AUTH",             $MAILGUN_AUTH);
-  Plugins::set("MAILGUN_ENDPOINT",         "https://api.eu.mailgun.net/v3/mg.filmmakersforfuture.org/messages");
-  Plugins::set("MAILGUN_FROM",             "Filmmakers for Future <message@mg.filmmakersforfuture.org>");
+  Plugins::set("MAILGUN_ENDPOINT",         "https://api.eu.mailgun.net/v3/mg.fm4f.org/messages");
+  Plugins::set("MAILGUN_FROM",             "Filmmakers for Future <message@mg.fm4f.org>");
   Plugins::set("NEWSLETTER_SEND_PASSWORD", $NEWSLETTER_SEND_PASSWORD);
   Plugins::set("DB_HOST",                  "localhost");
   Plugins::set("DB_PORT",                  3306);
