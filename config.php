@@ -37,6 +37,7 @@
         ]);
   
   // FM4F plugin configuration
+  Plugins::set("CAPTCHA_COOKIE_KEY",       $CAPTCHA_COOKIE_KEY);
   Plugins::set("ADMIN_MAIL",               "verification@filmmakersforfuture.org");
   Plugins::set("MAILGUN_AUTH",             $MAILGUN_AUTH);
   Plugins::set("MAILGUN_ENDPOINT",         "https://api.eu.mailgun.net/v3/mg.filmmakersforfuture.org/messages");
