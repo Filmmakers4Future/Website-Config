@@ -6,6 +6,6 @@ In order to verify your signature please visit the following link and complete y
 
 https://filmmakersforfuture.org/verify/?uid={%UID}&user={%USER_VERIFY_TOKEN}
 
-If you have not entered your information on our website then please ignore this email. We will not contact you again.
+If you have not entered your information on our website then please ignore this email.
 
 Thank you very much.
