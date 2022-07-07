@@ -7,6 +7,7 @@ $menuText = [
   "GREENFILMMAKING" => "Green Filmmaking",
   "RESOURCES"       => "Resources",
   "GETTINGSTARTED"  => "Getting Started",
+  "FRIENDS"         => "Friends and Endorsed Projects",
   "PODCAST"         => "Sustainability in Film - Podcast",
   "TOOLS"           => "Tools",
   "MAP"             => "Green Production Map",
